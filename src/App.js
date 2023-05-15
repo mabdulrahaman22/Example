@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-//import './calculator.css';
+import './calculator.css';
 import {BrowserRouter,Routes,Route,Link,Outlet} from 'react-router-dom'
 
 import Weatherreport from './Weather/Weatherreport';
