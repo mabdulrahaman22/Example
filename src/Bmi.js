@@ -21,13 +21,13 @@ function Bmicalculator(){
             <h2>BMI Calculator</h2>
             <div>
                 <label>Weight (kg):</label>
-                <input type="number" value={weight} onChange={(e)=> setWeight(e.target.value)}/>
+                <input type="text" value={weight} onChange={(e)=> setWeight(e.target.value)}/>
             </div>
             <div>
             <label>Height (m):</label>
                 <input type="text" value={height} onChange={(e)=> setHeight(e.target.value)}/>
             </div>
-            <button onClick={calculateBmi}></button>
+            <button onClick={calculateBmi}><b>search</b></button>
             {bmi && (
                 <div>
                     <p>your BMI is:{bmi}</p>
