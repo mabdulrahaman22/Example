@@ -11,6 +11,7 @@ import Registration from './Registration';
 //import SignIn from './SignIn';
 import Post from './Post';
 import Bmicalculator from './Bmi';
+import Movie from './Movieapp/Movie';
 function App() {
   return (
    <>
@@ -38,6 +39,9 @@ function App() {
         <li className="nav-item active">
           <Link to="./Bmi">Bmicalculator</Link>
         </li>
+        <li className="nav-item active">
+          <Link to="./Movieapp/Movie">Movie</Link>
+        </li>
 
          <Routes>
          <Route path="Registration" element={<Registration/>}></Route>
@@ -47,6 +51,7 @@ function App() {
         <Route path="Calculator" element={<Calculator/>}></Route>
         <Route path="Weather/Weatherreport" element={<Weatherreport/>}></Route>
         <Route path="Bmi" element={<Bmicalculator/>}></Route>
+        <Route path="Movieapp/Movie" element={<Movie/>}></Route>
         </Routes>
   </BrowserRouter>
  
